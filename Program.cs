@@ -25,16 +25,35 @@
 // }      
 
 
-//4
-int count = 0;
-for (int ticket = 1; ticket <= 30; ticket++)
-{
-    if (ticket == 4 || ticket == 12 || ticket == 19)
-    {
-        count++;
-        continue; //билет уже вытянут
-    }
-    Console.WriteLine($"Пропущенные билеты: {count}");
-    Console.WriteLine($"Первый доступный билет: {ticket}");
-    break;
-}
+// //4
+// int count = 0;
+// for (int ticket = 1; ticket <= 30; ticket++)
+// {
+//     if (ticket == 4 || ticket == 12 || ticket == 19)
+//     {
+//         count++;
+//         continue; //билет уже вытянут
+//     }
+//     Console.WriteLine($"Пропущенные билеты: {count}");
+//     Console.WriteLine($"Первый доступный билет: {ticket}");
+//     break;
+// }
+
+
+// //5
+// for (; ; )
+// {
+//     Console.Write("Введите код группы (для выхода - 'выход'): ");
+//     string groupCode = Console.ReadLine();
+
+//     if (groupCode == "выход")
+//     {
+//         break;
+//     }
+
+//     Console.WriteLine($"Записан код группы: {groupCode}");
+// }
+// Console.WriteLine("Работа с журналом завершена");
+
+
+//Самостоятельные задания ★
