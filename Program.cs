@@ -56,4 +56,75 @@
 // Console.WriteLine("Работа с журналом завершена");
 
 
-//Самостоятельные задания ★
+// //Самостоятельные задания ★
+// // Задача А
+// Console.WriteLine();
+// int N = 15;
+
+// for (int i = 1; i <= N; i++)
+// {
+//     if (i % 2 != 0)
+//     {
+//         Console.WriteLine(i);
+//     }
+// }
+
+// // Задача Б
+// Console.WriteLine();
+
+// for (int i = 100; i >= 0; i -= 10)
+// {
+//     Console.WriteLine(i);
+// }
+
+// // Индивидуальный вариант
+// Console.WriteLine();
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine().Trim();
+
+// if (string.IsNullOrEmpty(surname))
+// {
+//     Console.WriteLine("Фамилия не введена. Завершение работы.");
+//     return;
+// }
+
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+
+// var assigned = Enumerable.Range(1, 10)
+//     .OrderBy(_ => rnd.Next())
+//     .Take(2)
+//     .OrderBy(x => x)
+//     .ToList();
+
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+
+//Вариант 5
+Console.WriteLine();
+Console.WriteLine("Вариант 5:");
+
+for (int i = 1; i <= 100; i++)
+{
+    if (i % 3 == 0 && i % 5 == 0)
+    {
+        Console.WriteLine($"Первое число, кратное и 3, и 5: {i}");
+        break;
+    }
+}
+
+
+// Вариант 10
+Console.WriteLine();
+Console.WriteLine("Вариант 10:");
+
+for (int i = 1; i <= 5; i++)
+{
+    for (int j = 1; j <= 5; j++)
+    {
+        if (i + j == 6)
+        {
+            Console.WriteLine($"Пара: ({i}, {j})");
+            break;
+        }
+    }
+}
